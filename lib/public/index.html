@@ -1,52 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>API Proxy Starter</title>
+	<meta charset="UTF-8">
+	<title>Delayed | Home</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">	
 </head>
 
 <body>
+	<div class="container">
+		<a href="flight-status.html">Test link to Flight-status</a>
+		<a href="places.html">Test link to Places</a>
+	</div>
 
-<div id="autocomplete"></div>
+	<footer class="footer">
+		<div class="container" id="footer-text">
+			<p class="text-muted"></p>
+		</div>
+	</footer>
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
-<script>
-  // GLOBAL var for access token
-  var accessToken = '';
-
-  // do this one time
-  $.ajax({
-    url: '/api/yelp/oauth2/token',
-    method: 'POST',
-    data: {
-      grant_type: 'client_credentials',
-      client_id: 'DKj-IPb7Z7qjDMphovCP9g',
-      client_secret: 'nL0yFJUv5cA95FmDE6Fq5B1jo4ss6z2dGpvvK5XFM9T6ii0ehmP6dypGBzA4rxuj'
-    }
-  }).done(function (response) {
-    console.log(response);
-
-    // update global variable for your accessToken
-    accessToken = response.access_token;
-
-    $.ajax({
-      url: '/api/yelp/v3/autocomplete?text=del&latitude=37.786882&longitude=-122.399972',
-      method: 'GET',
-      headers: {
-        // use your access token in every API request to proxy
-        Authorization: 'Bearer ' + accessToken
-      }
-    }).done(function (response) {
-      $('#autocomplete').html(JSON.stringify(response, null, 2))
-    });
-  }).fail(function (err) {
-    console.error(err)
-  });
-
-</script>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
 </body>
-
 </html>
