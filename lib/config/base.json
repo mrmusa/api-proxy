@@ -1,0 +1,9 @@
+{
+  "port": 1337,
+  "proxies": [
+    {
+      "pathname": "yelp",
+      "target": "https://api.yelp.com"
+    }
+  ]
+}
