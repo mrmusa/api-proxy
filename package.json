@@ -14,7 +14,8 @@
     "babel-register": "^6.22.0",
     "bluebird": "^3.4.7",
     "express": "^4.14.1",
-    "http-proxy-middleware": "^0.17.4"
+    "http-proxy-middleware": "^0.17.4",
+    "nconf": "^0.8.4"
   },
   "scripts": {
     "dev": "nodemon lib/index.js --exec babel-node",
@@ -31,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/mrmusa/api-proxy/issues"
   },
-  "homepage": "https://github.com/mrmusa/api-proxy#readme"
+  "homepage": "https://github.com/mrmusa/api-proxy#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
