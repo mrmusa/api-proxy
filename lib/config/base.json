@@ -4,6 +4,14 @@
     {
       "pathname": "yelp",
       "target": "https://api.yelp.com"
+    },
+    {
+      "pathname": "food2fork",
+      "target": "http://food2fork.com/api"
+    },
+    {
+      "pathname": "flightstats",
+      "target": "https://api.flightstats.com/flex/flightstatus/rest/v2/json"
     }
   ]
 }

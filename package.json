@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/mrmusa/api-proxy/issues"
   },
-  "homepage": "https://github.com/mrmusa/api-proxy#readme"
+  "homepage": "https://github.com/mrmusa/api-proxy#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
