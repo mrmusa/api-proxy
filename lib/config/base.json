@@ -12,6 +12,10 @@
     {
       "pathname": "flightstats",
       "target": "https://api.flightstats.com/flex/flightstatus/rest/v2/json"
+    },
+    {
+      "pathname": "weather",
+      "target": "https://api.flightstats.com/flex/weather/rest/v1/json"
     }
   ]
 }
