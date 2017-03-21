@@ -1,0 +1,181 @@
+
+*{
+margin: 0;
+padding: 0;
+
+
+}
+
+.row{
+max-width: 1140px;
+margin:0 auto;
+
+
+}
+
+
+.main-nav{
+  list-style: none;
+float: right;
+margin-top: 60px;
+
+
+
+}
+
+.flight{
+
+  background-image: url();
+
+}
+
+.flight h3{
+
+
+}
+
+
+
+.foodcourt{
+background-color:rgba(0, 0, 0, 0.65) ;
+
+
+
+
+}
+
+.main-nav li{
+
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+
+}
+
+.main-nav li a{
+color:white;
+text-decoration: none;
+font-size: 90%;
+font-weight: bold;
+
+
+
+}
+
+
+.main-nav li a:hover{
+
+  color:white;
+  border-bottom: 2px solid #5bc0de;
+  transition: all 0.5s ease-in;
+  padding: 14px 0;
+
+}
+
+
+
+body{
+
+font-family: tahoma;
+color: white;
+
+
+
+
+}
+
+.Hero{
+position: absolute;
+width: 1140px;
+top:50%;
+left:50%;
+transform: scale(-50%,-50%);
+color: white;
+
+
+}
+
+header{
+background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(splash.png);
+height: 100vh;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+
+
+}
+
+.logo {
+  height: 100px;
+ float:left;
+ margin-top: 30px;
+
+}
+
+
+
+
+
+
+.btn{
+border: 1px solid #5bc0de;
+padding: 10px 30px;
+color:#5bc0de
+text-decoration: none;
+border-radius: 12px;
+margin-right: 15%;
+
+
+}
+
+.button-awesome{
+
+  margin-top: 40px;
+
+}
+
+.btn-half{
+
+  background-color: #5bc0de;
+  color:white;
+
+}
+
+.btn-full:hover{
+  background-color: #5bc0de;
+  color:white;
+  transition: all 0.5s ease-in;
+}
+
+.copy{
+width: 70%;
+margin-left: 15%;
+
+}
+
+h3:after{
+width: 100px;
+height: 2px;
+background-color: #5bc0de;
+display: block;
+margion:auto;
+margin-top: 30px;
+
+
+
+}
+
+
+.features h3{
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+
+}
+
+.arranging{
+text-align: justify;
+
+
+}
