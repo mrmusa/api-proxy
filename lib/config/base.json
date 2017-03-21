@@ -12,6 +12,10 @@
     {
       "pathname": "flightstats",
       "target": "https://api.flightstats.com/flex/flightstatus/rest/v2/json"
+    },
+    {
+      "pathname": "brewerydb",
+      "target": "https://api.brewerydb.com"
     }
   ]
 }

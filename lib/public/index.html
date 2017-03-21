@@ -17,6 +17,9 @@
 <h2>Food2Fork</h2>
 <div id="food2fork"></div>
 
+<h2>BreweryDB</h2>
+<div id="brewerydb"></div>
+
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 <!-- YELP -->
@@ -82,6 +85,21 @@
     // parse the string response with JSON.parse
     var response = JSON.parse(responseStr)
     $('#food2fork').html(JSON.stringify(response, null, 2))
+  }).fail(function (err) {
+    console.error(err)
+  });
+</script>
+
+<!-- BREWERYDB -->
+<script>
+  $.ajax({
+    // '/api/food2fork/' + everything in the examples after '/api/' i.e.
+    url: '/api/brewerydb/v2/search?key=6c667709753ad53866207f52c01820c8&q=coors&_=1490106377239',
+    method: 'GET'
+  }).done(function (response) {
+    console.log(response);
+    // parse the string response with JSON.parse
+    $('#brewerydb').html(JSON.stringify(response, null, 2))
   }).fail(function (err) {
     console.error(err)
   });
