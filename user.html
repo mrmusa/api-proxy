@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Form validation in Javascript</title>
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+ </head>
+ <body>
+ <div id="wrapper">
+ 	<form method="POST" action="#" onsubmit="return Validate()" name="vForm">
+ 		<div>
+ 			<input type="text" name="username" class="textInput" placeholder="Username">
+ 			<div id="name_error" class="val_error"></div>
+ 		</div>
+ 		<div>
+ 			<input type="email" name="email" class="textInput" placeholder="Email">
+ 			<div id="email_error" class="val_error"></div>
+ 		</div>
+ 		<div>
+ 			<input type="password" name="password" class="textInput" placeholder="Password">
+ 		</div>
+ 		<div>
+ 			<input type="password" name="password_confirmation" class="textInput" placeholder="password confirmation">
+ 			<div id="password_error" class="val_error"></div>
+ 		</div>
+ 		<div>
+		<button form="">Submit</button>
+		</div>
+	</form>
+</div>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+  <script type="text/javascript" src="us.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</body>
+ </html>
