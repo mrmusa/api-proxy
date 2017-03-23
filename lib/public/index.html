@@ -2,97 +2,26 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Delayed | Home</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" href="assets/css/style.css">	
+    <meta charset="UTF-8">
+    <title>Delayed | Home</title>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-	<div class="container">
-		<a href="flight-status.html">Test link to Flight-status</a>
-		<a href="yelp-page.html">Test link to Yelp</a>
-    <a href="weather.html">Test link to Weather</a>
-	</div>
-
-<h2>Yelp</h2>
-<div id="yelp"></div>
-
-<h2>Flight Status</h2>
-<div id="flightstats"></div>
-
-<h2>Food2Fork</h2>
-<div id="food2fork"></div>
-
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-
-<!-- YELP -->
-<script>
-  // GLOBAL var for access token
-  var accessToken = '';
-
-  // do this one time
-  $.ajax({
-    url: '/api/yelp/oauth2/token',
-    method: 'POST',
-    data: {
-      grant_type: 'client_credentials',
-      client_id: 'DKj-IPb7Z7qjDMphovCP9g',
-      client_secret: 'nL0yFJUv5cA95FmDE6Fq5B1jo4ss6z2dGpvvK5XFM9T6ii0ehmP6dypGBzA4rxuj'
-    }
-  }).done(function (response) {
-    console.log(response);
-
-    // update global variable for your accessToken
-    accessToken = response.access_token;
-
-    $.ajax({
-      // '/api/yelp/' + everything in the examples after 'https://api.yelp.com/' i.e.
-      url: '/api/yelp/v3/autocomplete?text=del&latitude=37.786882&longitude=-122.399972',
-      method: 'GET',
-      headers: {
-        // use your access token in every API request to proxy
-        Authorization: 'Bearer ' + accessToken
-      }
-    }).done(function (response) {
-      $('#yelp').html(JSON.stringify(response, null, 2))
-    });
-  }).fail(function (err) {
-    console.error(err)
-  });
-
-</script>
-
-<!-- FLIGHTSTATS -->
-<script>
-  $.ajax({
-    // '/api/flightstats/' + everything in the examples after '/v2/json/' i.e.
-    url: '/api/flightstats/flight/status/AA/100/arr/2017/03/30',
-    method: 'GET'
-  }).done(function (response) {
-    console.log(response);
-    $('#flightstats').html(JSON.stringify(response, null, 2))
-  }).fail(function (err) {
-    console.error(err)
-  });
-</script>
-
-
-<!-- FOOD2FORK -->
-<script>
-  $.ajax({
-    // 'https://gt-api-proxy.herokuapp.com/api/food2fork/' + everything in the examples after '/api/' i.e.
-    url: '/api/food2fork/search?key=1f35aa9b21774c9228255e0d0e0844f2&q=shredded%20chicken',
-    method: 'GET'
-  }).done(function (responseStr) {
-    console.log(responseStr);
-    // parse the string response with JSON.parse
-    var response = JSON.parse(responseStr)
-    $('#food2fork').html(JSON.stringify(response, null, 2))
-  }).fail(function (err) {
-    console.error(err)
-  });
-</script>
-
+    <h1>Sign in</h1>
+    <div class="row">
+        <div class="col-md-9 col-centered">
+            <div class="panel-default panel">
+            </div>
+        </div>
+    </div>
+    <div id='firebaseui-auth-container'></div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+    <script src="assets/javascript/firebase.js"></script>
 </body>
+
 </html>
