@@ -16,6 +16,10 @@
     {
       "pathname": "brewerydb",
       "target": "https://api.brewerydb.com"
+    },
+    {
+      "pathname": "metaweather",
+      "target": "https://www.metaweather.com/api/"
     }
   ]
 }
