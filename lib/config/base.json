@@ -20,6 +20,14 @@
     {
       "pathname": "metaweather",
       "target": "https://www.metaweather.com/api/"
+    },
+    {
+      "pathname": "zomato",
+      "target": "https://developers.zomato.com/api/"
+    },
+    {
+      "pathname": "amc",
+      "target": "https://api.amctheatres.com/"
     }
   ]
 }
