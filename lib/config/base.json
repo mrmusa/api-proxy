@@ -32,6 +32,10 @@
     {
       "pathname": "maps",
       "target": "https://maps.googleapis.com/maps/api/"
+    },
+    {
+      "pathname": "hotwire",
+      "target": "http://api.hotwire.com"
     }
   ]
 }
