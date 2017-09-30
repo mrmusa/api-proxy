@@ -2,7 +2,7 @@
   "port": 1337,
   "proxies": [
     {
-      "pathname": "yelp",
+      "pathname": "yelp--CORSPROBLEM",
       "target": "https://api.yelp.com"
     },
     {
@@ -26,8 +26,12 @@
       "target": "https://developers.zomato.com/api/"
     },
     {
-      "pathname": "amc",
+      "pathname": "amc--CORSPROBLEM",
       "target": "https://api.amctheatres.com/"
+    },
+    {
+      "pathname": "maps",
+      "target": "https://maps.googleapis.com/maps/api/"
     }
   ]
 }
