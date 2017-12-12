@@ -36,6 +36,10 @@
     {
       "pathname": "hotwire",
       "target": "http://api.hotwire.com"
+    },
+    {
+      "pathname": "apilayer",
+      "target": "http://apilayer.net/api/"
     }
   ]
 }
